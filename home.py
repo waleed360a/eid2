@@ -91,7 +91,7 @@ with st.sidebar:
 st.title(texts["title"])
 
 
-def create_image_with_name(name, template_path="./Eid-Greeting-File.jpg"):
+def create_image_with_name(name, template_path="./Moneymoon-Ramadan.jpg"):
     # Open the template image
     img = Image.open(template_path)
     draw = ImageDraw.Draw(img)
@@ -101,7 +101,7 @@ def create_image_with_name(name, template_path="./Eid-Greeting-File.jpg"):
     bidi_text = get_display(reshaped_text)
 
     # Load custom Arabic font
-    font_path = os.path.join("fonts/Fonts", "DINNextLTArabic-Regular.ttf")  # Ensure this file exists!
+    font_path = os.path.join("fonts", "Amiri-Regular.ttf")  # Ensure this file exists!
     try:
         font = ImageFont.truetype(font_path, size=80)
     except IOError:
