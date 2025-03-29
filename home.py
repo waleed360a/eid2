@@ -118,7 +118,7 @@ def create_image_with_name(name, template_path="./Moneymoon-Ramadan.jpg"):
     y = (img_height - text_height) / 2
 
     # Draw text on the image
-    draw.text((x, y-800), bidi_text, font=font, fill="#008afe")
+    draw.text((x, y+200), bidi_text, font=font, fill="#008afe")
 
     return img
 
