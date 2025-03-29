@@ -91,7 +91,7 @@ with st.sidebar:
 st.title(texts["title"])
 
 
-def create_image_with_name(name, template_path="./Eid-Greeting-File.jpg"):
+def create_image_with_name(name, template_path="./Moneymoon-Ramadan.jpg"):
     # Open the template image
     img = Image.open(template_path)
     draw = ImageDraw.Draw(img)
